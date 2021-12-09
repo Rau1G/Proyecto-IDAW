@@ -48,6 +48,8 @@ function documentWrite(){
             var seleccion = "'"+ x.key + "'";
             var seleccionReplace = x.key;
             values = values.replace(','+seleccionReplace, '');
+            values = values.replace('_', ' ');
+            values = values.replace('_', ' ');
             var prexio = x.precio;
             values = values.replace(','+prexio, ': '+"$"+prexio);
             values = '<input type="text" name="'+x.seleccion+'" id="caja_valor" value="'+values+'" disabled>';
