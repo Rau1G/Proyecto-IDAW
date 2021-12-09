@@ -9,9 +9,13 @@ if (isset($_POST['Paletas'])){ //Paletas
     echo $precio;
 }
 
-if (isset($_POST[''])){ //Helados
-    $datos = $_POST['Chocolate'];
-    $precio = intval(ltrim(explode(" ", $datos)[count(explode(" ", $datos))-1], ''));
+if (isset($_POST['Helados'])){ //Helados
+    $datos = $_POST['helado1'];
+    $precio = intval(ltrim(explode(" ", $datos)[count(explode(" ", $datos))-1], '$'));
+    $nombre = ltrim(explode(" ", $datos)[count(explode(" ", $datos))-2], ':');
+    $cantidad = intval(ltrim(explode(" ", $datos)[count(explode(" ", $datos)) -5], '$'));
+    echo $cantidad;
+    echo $nombre;
     echo $precio;
     
 }
