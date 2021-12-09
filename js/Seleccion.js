@@ -52,10 +52,10 @@ function documentWrite(){
             values = values.replace('_', ' ');
             var prexio = x.precio;
             values = values.replace(','+prexio, ': '+"$"+prexio);
-            values = '<input type="text" name="'+x.seleccion+'" value="'+values+'">';
+            values = '<input type="text" name="'+x.seleccion+'" value="'+values+'" readonly>';
             var botonMenos = '<button><a href="" onclick="seleccionMenos('+seleccion+')">▬</a></button>';
             var botonErase = '<button><a href="" onclick="botonErase('+seleccion+')">Eliminar</a></button>';
-            document.createElement(botonErase + botonMenos + values);            
+            document.write(botonErase + botonMenos + values);            
         }
     } 
 }
