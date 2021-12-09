@@ -1,0 +1,114 @@
+@font-face{
+	font-family: "FontHelado";
+	src: url("../media/Regular Brush.otf");
+}
+
+@font-face{
+	font-family: "FontTexto";
+	src:  url("../media/BebasNeue-Regular.otf");
+}
+
+.Contenedor{
+	display: flex;
+	justify-content: center;
+	margin: 0px; 
+}
+
+.empresa{
+	display: block;
+	justify-self: center;
+	background-image: url("../media/Banner.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position-x: center;
+  	background-position-y: center;
+  	width: 85rem;
+  	height: 55rem; /*---------------*/
+  	border-radius: 10px;
+}
+
+.empresa h1{
+	text-align: center;
+	font-family: "FontHelado";
+	font-size: 60px;
+	color: #fff;
+	text-shadow: #000  10px 0 1px;
+}
+
+.empresa p{
+	text-align: center;
+	font-family: "FontTexto";
+	font-size: 25px;
+	margin: 0px;
+}
+
+.empresa hr{
+	border-width: 5px;
+	border-color: lightpink;
+}
+
+.empresa section{
+	margin: 100px;
+	display: flex;
+	justify-content: center;
+	float: 50%;
+}
+
+.empresa button{
+	background-color: #fff;
+	margin: 50px;
+	border-radius: 10px;
+	border-color: #000000;
+}
+
+.empresa button img{
+	margin: 10px;
+	width: 7rem; /*--------------*/
+}
+
+.empresa button:hover{
+	background-color: #71DFE7;
+	border: groove;
+	border-color: #000000;
+}
+
+.empresa .Cono-Helado .Cuenta{
+	background-color: #fff;
+	width: 25rem;
+	height: 25rem;
+	border-radius: 10px;
+}
+
+.empresa .Cono-Helado .Cuenta p{
+	margin: 25px;
+}
+
+.empresa .Cono-Helado .Cuenta .Acciones{
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+}
+
+.empresa .Cono-Helado .Cuenta .Acciones button{
+	background-color: #fff;
+	font-family: "FontTexto";
+	margin: 2px;
+	width: 4rem;
+	height: 2rem;
+	border-radius: 10px;
+	border-color: #000000;
+}
+
+.Productos button{
+	background-color: #fff;
+	margin: 10px;
+	border-radius: 10px;
+	border-color: #000000;
+	text-decoration: none;
+}
+
+.empresa .Cono-Helado .Cuenta .Acciones button:hover{
+	background-color: #71DFE7;
+	border: groove;
+	border-color: #000000;
+}

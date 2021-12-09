@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<script src="js/Seleccion.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/ConoHel.css">
+	<title>HELADOS</title>
+</head>
+
+<body>
+	<div class="Contenedor">
+		<div class="empresa">
+			<header>
+				<a href="index.html" onclick="cancelarSeleccion()" style="text-decoration: none;"><h1>Ice Cream Center</h1></a>
+				<p>Guadalupe Zacatecas</p>
+			</header><hr>
+
+			<section class="Cono-Helado">
+				<div class="Sabores">
+					<button><a href="" onclick="seleccion('HXNMBR1', 'Helado Cono Fresa', 10)"><img src="media/Helado_Cono_Fresa.png" alt="HeladoCono/Fresa"></a></button>
+					<button><a href="" onclick="seleccion('HXNMBR2', 'Helado Cono Vainilla', 10)"><img src="media/Helado_Cono_Vainilla.png" alt="HeladoCono/Vainilla"></a></button>
+					<button><a href="" onclick="seleccion('HXNMBR3', 'Helado Cono Chocolate', 10)"><img src="media/Helado_Cono_Chocolat.png" alt="HeladoCono/Chocolate"></a></button>
+				</div>
+				<div class="Cuenta">
+					<p>Paletas/Helados/Frituras</p>
+					<div class="Productos">
+						<ul>
+							<script>documentWrite();</script>
+						</ul>
+					</div>
+					<div class="Acciones">
+						<button><a href="" onclick="cancelarSeleccion()">Cancelar</a></button>
+						<button>Cobrar</button>
+						<button>Finalizar</button>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+</body>
+</html>
