@@ -1,14 +1,17 @@
 <?php
 if (isset($_POST['Paletas'])){ //Paletas
-    $datos = $_POST['Chocolate'];
+    $datos = $_POST['paleta1'];
     $precio = intval(ltrim(explode(" ", $datos)[count(explode(" ", $datos))-1], '$'));
+    $nombre = ltrim(explode(" ", $datos)[count(explode(" ", $datos))-2], ':');
+    $cantidad = intval(ltrim(explode(" ", $datos)[count(explode(" ", $datos)) -5], '$'));
+    echo $cantidad;
+    echo $nombre;
     echo $precio;
-    //$nombre = 
 }
 
 if (isset($_POST[''])){ //Helados
     $datos = $_POST['Chocolate'];
-    $precio = intval(ltrim(explode(" ", $datos)[count(explode(" ", $datos))-1], '$'));
+    $precio = intval(ltrim(explode(" ", $datos)[count(explode(" ", $datos))-1], ''));
     echo $precio;
     
 }
