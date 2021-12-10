@@ -17,12 +17,11 @@ if (isset($_POST['Paletas'])){ //Paletas
         $paletas[] = $sabores;
     }
 
-      if (!empty($_POST['Paleta_Fresa']))) { // Paleta Fresa
+      if (!empty($_POST['Paleta_Fresa'])) { // Paleta Fresa
         $datos = $_POST['Paleta_Fresa'];
         $precio = intval(ltrim(explode(" ", $datos)[count(explode(" ", $datos))-1], '$'));
         $nombre = "Paleta/Fresa";
         $cantidad = intval(explode(" ", $datos)[0]);
-
         $sabores = [
             'nombre' => $nombre,
             'precio' => $precio,
@@ -63,3 +62,4 @@ if (isset($_POST[''])){ //Bebidas
     
     
 }
+
