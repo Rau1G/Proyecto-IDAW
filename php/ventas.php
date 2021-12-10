@@ -42,23 +42,3 @@ if (isset($_POST['Paletas'])){ //Paletas
 
     header("Location:../Paletas.html");
 }
-
-if (isset($_POST['Helados'])){ //Helados Vasos
-    
-    
-}
-
-if (isset($_POST[''])){ //Helados/Conos
-    
-}
-
-if (isset($_POST[''])){ //Frituras
-    
-    
-}
-
-if (isset($_POST[''])){ //Bebidas
-    
-    
-}
-
