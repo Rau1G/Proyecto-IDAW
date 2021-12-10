@@ -1,11 +1,12 @@
 <?php
 if (isset($_POST['Paletas'])){ //Paletas
+    
     $paletas = [];
 
-    if ($_POST['Paleta_Chocolate'] != "-1") { // Paleta Chocolate
+    if (!empty($_POST['Paleta_Chocolate'])) { // Paleta Chocolate
         $datos = $_POST['Paleta_Chocolate'];
         $precio = intval(ltrim(explode(" ", $datos)[count(explode(" ", $datos))-1], '$'));
-        $nombre = ltrim(explode(" ", $datos)[count(explode(" ", $datos))-2], ':');
+        $nombre = "Paleta/Chocolate_Fresa";
         $cantidad = intval(ltrim(explode(" ", $datos)[count(explode(" ", $datos)) -5], '$'));
         
         $sabores = [
@@ -16,16 +17,12 @@ if (isset($_POST['Paletas'])){ //Paletas
         $paletas[] = $sabores;
     }
 
-      if ($_POST['Paleta_Fresa'] != "-1") { // Paleta Fresa
+      if (!empty($_POST['Paleta_Fresa']))) { // Paleta Fresa
         $datos = $_POST['Paleta_Fresa'];
         $precio = intval(ltrim(explode(" ", $datos)[count(explode(" ", $datos))-1], '$'));
         $nombre = "Paleta/Fresa";
         $cantidad = intval(explode(" ", $datos)[0]);
-        echo "<pre>";
-        echo $precio;
-        echo $cantidad;
-        echo "<pre>";
-        echo "<br>".$datos."> Aqui";
+
         $sabores = [
             'nombre' => $nombre,
             'precio' => $precio,
@@ -43,6 +40,8 @@ if (isset($_POST['Paletas'])){ //Paletas
             echo "Error";
         }
     }
+
+    header("Location:../Paletas.html");
 }
 
 if (isset($_POST['Helados'])){ //Helados
