@@ -3,7 +3,7 @@
   <header class="page-header">
     <nav>
       <a href="index.php" class="logo">
-        <img src="img/uaz-logo.png" alt="">
+        <img src="img/uaz-logo.png" alt="logo uaz">
         <h3>Universidad Autonoma de Zacatecas</h3>
       </a>
       <button class="toggle-mob-menu" aria-expanded="false" aria-label="open menu">

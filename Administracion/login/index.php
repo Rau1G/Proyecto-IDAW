@@ -24,6 +24,7 @@
              if( $resultado->num_rows ) {
                  // Revisar si el password es correcto
                  $usuario = mysqli_fetch_assoc($resultado);
+
                  
                  // Verificar si el password es correcto o no
  
