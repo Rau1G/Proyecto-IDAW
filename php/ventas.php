@@ -10,7 +10,7 @@ if (isset($_POST['Paletas'])){ //Paletas
         $cantidad = intval(ltrim(explode(" ", $datos)[count(explode(" ", $datos)) -5], '$'));
         
         //
-        //comentario Roman se parece al Profe Lalo
+        //comentario Roman se parece al Profe Lalo 
         //
         //Algo
         $sabores = [

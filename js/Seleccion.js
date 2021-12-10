@@ -40,7 +40,9 @@ function seleccionMenos(seleccion){
     }      
 }
 
-function documentWrite(){
+function documentWrite(display){
+    var total = 0;
+    var display = 0;
     for (var i = 0; i <= 6; i++){ 
         var x = JSON.parse(localStorage.getItem("HXNMBR"+i));
         if (x != null){
@@ -55,9 +57,16 @@ function documentWrite(){
             values = '<input type="text" name="'+x.seleccion+'" value="'+values+'" readonly>';
             var botonMenos = '<button><a href="" onclick="seleccionMenos('+seleccion+')">▬</a></button>';
             var botonErase = '<button><a href="" onclick="botonErase('+seleccion+')">Eliminar</a></button>';
-            document.write(botonErase + botonMenos + values);            
+            total += x.precio;
+            document.write(botonErase + botonMenos + values); 
+            display = 1;          
         }
     } 
+    if (display!=0){
+        inputotal = '<input type="text" style= "background-color:#FFEF78;" name="total" value="'+"El costo total es: $"+total+'" readonly>';  
+    }
+    document.write("<br><br>"+inputotal+"</br>")
+    
 }
 
 function botonErase(seleccion){
