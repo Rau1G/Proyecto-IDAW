@@ -1,5 +1,6 @@
 
-<?php include 'templates/head.php' ?>
+
+<?php include 'templates/head.php'; session_start(); ?> 
 <?php include 'templates/menu.php' ?>
 
 
@@ -12,7 +13,7 @@
         </button>
       </form>
       <div class="admin-profile">
-        <span class="greeting">Hello admin</span>
+        <span class="greeting">Hola compa</span>
         <div class="notifications">
           <span class="oculto">1</span> <!--badge <- clase para mostrar la notificacion -->
           <i class="fas fa-user-circle"></i>
@@ -30,7 +31,7 @@
       <article></article>
       <article></article>
     </section>
-    <? php include 'templates/footer.php'; >
+
 
 <?php include 'templates/footer.php' ?>
 

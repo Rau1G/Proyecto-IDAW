@@ -8,7 +8,7 @@ if(isset($_POST['Registro'])){
 
     include '../../../php/database.php';
     $madarConsulta = mysqli_query($conectionSQL, "INSERT INTO usuarios VALUES(null, '".$correo."', '".$nombre."', '".$apellido."','".$password."');");
-    header("Location: ../index.html");
+    header("Location: ../index.php");
     // Por si hay error cierra la conexion
     if($madarConsulta == false){
         die(mysqli_error($conectionSQL));
