@@ -9,13 +9,6 @@ if (isset($_POST['Paletas'])){ //Paletas
         $nombre = "Paleta/Chocolate_Fresa";
         $cantidad = intval(ltrim(explode(" ", $datos)[count(explode(" ", $datos)) -5], '$'));
         
-<<<<<<< HEAD
-        //
-        //comentario Roman se parece al Profe Lalo 
-        //
-        //Algo
-=======
->>>>>>> 46ca6cbc3ae8f53e7f6267597225cb4d36cd0a75
         $sabores = [
             'nombre' => $nombre,
             'precio' => $precio,
@@ -250,7 +243,7 @@ if (isset($_POST['Frituras'])){ //Helados/Conos
     if (!empty($_POST['Nachos'])) { // Nachos
         $datos = $_POST['Nachos'];
         $precio = intval(ltrim(explode(" ", $datos)[count(explode(" ", $datos))-1], '$'));
-        $nombre = "Frituras/Frituras";
+        $nombre = "Frituras/Nachos";
         $cantidad = intval(explode(" ", $datos)[0]);
         $sabores = [
             'nombre' => $nombre,

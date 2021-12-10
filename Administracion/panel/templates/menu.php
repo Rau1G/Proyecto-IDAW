@@ -2,7 +2,7 @@
 <body>
   <header class="page-header">
     <nav>
-      <a href="#" class="logo">
+      <a href="index.php" class="logo">
         <img src="img/uaz-logo.png" alt="">
         <h3>Universidad Autonoma de Zacatecas</h3>
       </a>
@@ -16,13 +16,13 @@
           <h3>Administración</h3>
         </li>
         <li>
-          <a href="#0">
+          <a href="index.php">
             <i class="fas fa-tachometer-alt"></i>
             <span>Panel de control</span>
           </a>
         </li>
         <li>
-          <a href="#0">
+          <a href="usuarios.php">
             <i class="fas fa-user"></i>
             <span>Usuarios</span>
           </a>
