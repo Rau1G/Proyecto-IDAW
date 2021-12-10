@@ -3,8 +3,8 @@
   <header class="page-header">
     <nav>
       <a href="index.php" class="logo">
-        <img src="img/uaz-logo.png" alt="logo uaz">
-        <h3>Universidad Autonoma de Zacatecas</h3>
+        <img src="img/logoHelado.png" alt="logo heladeria">
+        <h3>Ice Cream Center</h3>
       </a>
       <button class="toggle-mob-menu" aria-expanded="false" aria-label="open menu">
         <svg width="20" height="20" aria-hidden="true">

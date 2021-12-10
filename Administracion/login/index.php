@@ -62,7 +62,7 @@
 </head>
 <body class="body-login">
     <div class="login-box">
-        <img class="avatar" src="img/logoUAZ.jpg" alt="logo uaz">
+        <img class="avatar" src="img/logoHelado.png" alt="logo heladeria">
         <h1>Inicia sesión</h1>
 
         <form method="post">
