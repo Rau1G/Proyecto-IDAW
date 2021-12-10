@@ -42,7 +42,7 @@ if (isset($_POST['Paletas'])){ //Paletas
 
     header("Location:../Paletas.html");
 }
-if (isset($_POST['HeladosCono'])){ //Helados/Conos
+if (isset($_POST['ConosHelados'])){ //Helados/Conos
     $conos = [];
 
     if (!empty($_POST['Helado_Cono_Vainilla'])) { // Cono Vainilla
