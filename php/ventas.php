@@ -12,6 +12,18 @@ if (isset($_POST['Paletas'])){ //Paletas
             'precio' => $precio,
             'cantidad' => $cantidad
         ];
+        $paletas[5] = $sabores;
+    }if($_POST['Paleta_Fresa'] != "-1"){
+        $datos = $_POST['Paleta_Fresa'];
+        $precio = intval(ltrim(explode(" ", $datos)[count(explode(" ", $datos))-1], '$'));
+        $nombre = ltrim(explode(" ", $datos)[count(explode(" ", $datos))-2], ':');
+        $cantidad = intval(ltrim(explode(" ", $datos)[count(explode(" ", $datos)) -5], '$'));
+        
+        $sabores = [
+            'nombre' => $nombre,
+            'precio' => $precio,
+            'cantidad' => $cantidad
+        ];
         $paletas[0] = $sabores;
     }
     echo "<pre>";
