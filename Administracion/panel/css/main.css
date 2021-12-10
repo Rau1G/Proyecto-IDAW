@@ -321,6 +321,36 @@ i {
   height: 400px;
 }
 
+.seccion {
+    margin-top: $separacion / 2;
+    margin-bottom: $separacion / 2;
+}
+.contenido-centrado {
+    max-width: 80rem;
+}
+.anuncio {
+    background-color: #001;
+    border: 1px solid #225;
+    margin-bottom: 2rem;
+
+    
+ 
+}
+
+.contenido-anuncio {
+        padding: 2rem;
+    }
+
+    h3, p {
+        margin: 0;
+    }
+
+.precio {
+    color: $verde;
+    font-weight: $bold;
+    font-size: 3rem;
+}
+
 
 /* MQ RULES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

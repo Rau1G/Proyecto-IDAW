@@ -4,6 +4,7 @@
 <?php include 'templates/menu.php' ?>
 
 
+
   <section class="page-content">
     <section class="search-and-user">
       <form>
@@ -24,12 +25,25 @@
       <article>
         <canvas id="graficaGanacias"></canvas>
       </article>
-      <article></article>
-      <article></article>
-      <article></article>
-      <article></article>
-      <article></article>
-      <article></article>
+      
+      <div style="background-color: #84DFFF; font-size: 1em; text-align: left;">
+        <h2 style="text-align: center;">Base De Datos</h2><hr style="border-width: 3px;
+  border-color: #000;">
+        <?php 
+                function VentasDia(){
+                  include '../../php/database.php';
+                  $madarConsulta = mysqli_query($conectionSQL, "SELECT Nombre, Cantidad FROM ventas;");
+
+                  while ($resultado = mysqli_fetch_assoc($madarConsulta)) {
+                    echo "<p style = 'display: block'>";
+                    echo "Cantidad:".$resultado['Cantidad']."<br>"."Sabor:". $resultado['Nombre'];
+                    echo "</p><br>";
+                  }
+                  
+                }
+                echo VentasDia(); 
+?>
+      </div>
     </section>
 
 
