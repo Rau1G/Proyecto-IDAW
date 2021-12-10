@@ -103,23 +103,62 @@ if (isset($_POST['Paletas'])){ //Paletas
     header("Location:../Paletas.html");
 }
 
-if (isset($_POST['Helados'])){ //Helados
+
+if (isset($_POST['ConosHelados'])){ //Helados/Conos
     
-    
+    $conos = [];
+
+    if (!empty($_POST['Helado_Cono_Vainilla'])) { // Cono Vainilla
+        $datos = $_POST['Helado_Cono_Vainilla'];
+        $precio = intval(ltrim(explode(" ", $datos)[count(explode(" ", $datos))-1], '$'));
+        $nombre = "Helado Cono/Vainilla";
+        $cantidad = intval(explode(" ", $datos)[0]);
+        $sabores = [
+            'nombre' => $nombre,
+            'precio' => $precio,
+            'cantidad' => $cantidad
+        ];
+        $conos[] = $sabores;
+    }
+
+    if (!empty($_POST['Helado_Cono_Fresa'])) { // Cono Fresa
+        $datos = $_POST['Helado_Cono_Fresa'];
+        $precio = intval(ltrim(explode(" ", $datos)[count(explode(" ", $datos))-1], '$'));
+        $nombre = "Helado Cono/Fresa";
+        $cantidad = intval(explode(" ", $datos)[0]);
+        $sabores = [
+            'nombre' => $nombre,
+            'precio' => $precio,
+            'cantidad' => $cantidad
+        ];
+        $conos[] = $sabores;
+    }
+
+    if (!empty($_POST['Helado_Cono_Chocolate'])) { // Cono Chocolate
+        $datos = $_POST['Helado_Cono_Chocolate'];
+        $precio = intval(ltrim(explode(" ", $datos)[count(explode(" ", $datos))-1], '$'));
+        $nombre = "Helado Cono/Chocolate";
+        $cantidad = intval(explode(" ", $datos)[0]);
+        $sabores = [
+            'nombre' => $nombre,
+            'precio' => $precio,
+            'cantidad' => $cantidad
+        ];
+        $conos[] = $sabores;
+    }
+
+    foreach ($conos as $cono) {
+        include 'database.php';
+        $madarConsulta = mysqli_query($conectionSQL, "INSERT INTO ventas VALUES(null, '".$cono['nombre']."', ".$cono['cantidad'].", ".$cono['precio'].");");
+        // Por si hay error cierra la conexion   
+        if($madarConsulta == false){
+            die(mysqli_error($conectionSQL));
+            echo "Error";
+        }
+    }
+
+    header("Location:../ConoHel.html");
+
 }
 
-if (isset($_POST[''])){ //Helados/Conos
-    
-    
-}
-
-if (isset($_POST[''])){ //Frituras
-    
-    
-}
-
-if (isset($_POST[''])){ //Bebidas
-    
-    
-}
 
