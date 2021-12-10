@@ -243,7 +243,7 @@ if (isset($_POST['Frituras'])){ //Helados/Conos
     if (!empty($_POST['Nachos'])) { // Nachos
         $datos = $_POST['Nachos'];
         $precio = intval(ltrim(explode(" ", $datos)[count(explode(" ", $datos))-1], '$'));
-        $nombre = "Frituras/Nachos";
+        $nombre = "Frituras/Frituras";
         $cantidad = intval(explode(" ", $datos)[0]);
         $sabores = [
             'nombre' => $nombre,
